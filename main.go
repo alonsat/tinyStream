@@ -9,6 +9,7 @@ import (
 	"syscall"
 	"time"
 	"tinystream/httpServer"
+	"tinystream/internal"
 )
 
 func main() {
@@ -19,6 +20,7 @@ func main() {
 		Handler:           engine,
 		ReadHeaderTimeout: 5 * time.Second,
 	}
+	go internal.UpdateTotalSystemStats()
 	go func() {
 		log.Printf("running server on address: %s\n", addr)
 		err := srv.ListenAndServe()

@@ -1,0 +1,3 @@
+statusConfig:
+  cpuSamplingInterval: 5s
+  ramSamplingInterval: 5s

@@ -1,0 +1,12 @@
+make it cross os using checks for the os
+change to syscall/proc status sampling
+add redis
+add db (maybe mongo?)
+add streaming logic - cgo with ffmpeg/ write my own library
+ebpf - proxy + lb
+quic
+authentication
+seperate monolit
+add frontend
+use viper to read config from yaml
+dashjs/ my own player
